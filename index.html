@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grade 3 Science End-of-Year Exam</title>
+<style>
+  body { font-family: Arial, sans-serif; display: flex; justify-content: center; flex-direction: column; align-items: center; margin:0; padding:20px; background-color:#f9f9f9; }
+  .container { max-width:900px; padding:30px; background-color:#fff; border:2px solid #333; border-radius:10px; text-align:center; }
+  h1 { margin-bottom:10px; }
+  p.instructions { text-align:left; font-weight:bold; }
+  .question { text-align:left; margin:15px 0; }
+  input[type="radio"] { margin-right:5px; }
+  #submitBtn { padding:10px 20px; font-size:16px; cursor:pointer; margin-top:20px; }
+  #result { font-size:18px; font-weight:bold; margin-top:20px; color:green; text-align:left; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Grade 3 Science End-of-Year Exam</h1>
+  <p><strong>Name: <input type="text" id="studentName" placeholder="Enter your name"></strong></p>
+  <p class="instructions">
+    Instructions: Choose the correct answer for each question.
+  </p>
+
+  <!-- Questions 1-30 -->
+  <div class="question"><strong>1. What is the main source of energy for plants?</strong><br>
+    <input type="radio" name="q1" value="A"> Water<br>
+    <input type="radio" name="q1" value="B"> Sun<br>
+    <input type="radio" name="q1" value="C"> Soil<br>
+    <input type="radio" name="q1" value="D"> Moon<br>
+  </div>
+
+  <div class="question"><strong>2. Which part of the plant makes food?</strong><br>
+    <input type="radio" name="q2" value="A"> Root<br>
+    <input type="radio" name="q2" value="B"> Leaf<br>
+    <input type="radio" name="q2" value="C"> Stem<br>
+    <input type="radio" name="q2" value="D"> Flower<br>
+  </div>
+
+  <div class="question"><strong>3. What do animals need to survive?</strong><br>
+    <input type="radio" name="q3" value="A"> Food, water, air<br>
+    <input type="radio" name="q3" value="B"> Rocks, soil, water<br>
+    <input type="radio" name="q3" value="C"> Sunlight, sand, wind<br>
+    <input type="radio" name="q3" value="D"> Clothes, food, moonlight<br>
+  </div>
+
+  <div class="question"><strong>4. Which planet is known as the Red Planet?</strong><br>
+    <input type="radio" name="q4" value="A"> Venus<br>
+    <input type="radio" name="q4" value="B"> Mars<br>
+    <input type="radio" name="q4" value="C"> Earth<br>
+    <input type="radio" name="q4" value="D"> Jupiter<br>
+  </div>
+
+  <div class="question"><strong>5. Water changes to vapor when it is heated. What is this process called?</strong><br>
+    <input type="radio" name="q5" value="A"> Evaporation<br>
+    <input type="radio" name="q5" value="B"> Condensation<br>
+    <input type="radio" name="q5" value="C"> Precipitation<br>
+    <input type="radio" name="q5" value="D"> Freezing<br>
+  </div>
+
+  <div class="question"><strong>6. Which of these is a living thing?</strong><br>
+    <input type="radio" name="q6" value="A"> Rock<br>
+    <input type="radio" name="q6" value="B"> Dog<br>
+    <input type="radio" name="q6" value="C"> Water<br>
+    <input type="radio" name="q6" value="D"> Sun<br>
+  </div>
+
+  <div class="question"><strong>7. The moon gives light at night. True or False?</strong><br>
+    <input type="radio" name="q7" value="A"> True<br>
+    <input type="radio" name="q7" value="B"> False<br>
+  </div>
+
+  <div class="question"><strong>8. Name two sources of water on Earth.</strong><br>
+    <input type="radio" name="q8" value="A"> River and lake<br>
+    <input type="radio" name="q8" value="B"> Sun and moon<br>
+    <input type="radio" name="q8" value="C"> Soil and sand<br>
+    <input type="radio" name="q8" value="D"> Trees and flowers<br>
+  </div>
+
+  <div class="question"><strong>9. Which gas do we breathe in to live?</strong><br>
+    <input type="radio" name="q9" value="A"> Carbon dioxide<br>
+    <input type="radio" name="q9" value="B"> Oxygen<br>
+    <input type="radio" name="q9" value="C"> Nitrogen<br>
+    <input type="radio" name="q9" value="D"> Helium<br>
+  </div>
+
+  <div class="question"><strong>10. Which part of our body helps us see?</strong><br>
+    <input type="radio" name="q10" value="A"> Ear<br>
+    <input type="radio" name="q10" value="B"> Eye<br>
+    <input type="radio" name="q10" value="C"> Nose<br>
+    <input type="radio" name="q10" value="D"> Mouth<br>
+  </div>
+
+  <!-- Questions 11–30 (multiple choice) -->
+  <div class="question"><strong>11. Name the process by which plants make food.</strong><br>
+    <input type="radio" name="q11" value="A"> Respiration<br>
+    <input type="radio" name="q11" value="B"> Photosynthesis<br>
+    <input type="radio" name="q11" value="C"> Evaporation<br>
+    <input type="radio" name="q11" value="D"> Condensation<br>
+  </div>
+
+  <div class="question"><strong>12. Which animal lays eggs?</strong><br>
+    <input type="radio" name="q12" value="A"> Chicken<br>
+    <input type="radio" name="q12" value="B"> Cow<br>
+    <input type="radio" name="q12" value="C"> Dog<br>
+    <input type="radio" name="q12" value="D"> Cat<br>
+  </div>
+
+  <div class="question"><strong>13. The Earth revolves around the ____.</strong><br>
+    <input type="radio" name="q13" value="A"> Moon<br>
+    <input type="radio" name="q13" value="B"> Sun<br>
+    <input type="radio" name="q13" value="C"> Mars<br>
+    <input type="radio" name="q13" value="D"> Stars<br>
+  </div>
+
+  <div class="question"><strong>14. Name one source of light.</strong><br>
+    <input type="radio" name="q14" value="A"> Lamp<br>
+    <input type="radio" name="q14" value="B"> Chair<br>
+    <input type="radio" name="q14" value="C"> Table<br>
+    <input type="radio" name="q14" value="D"> Rock<br>
+  </div>
+
+  <div class="question"><strong>15. True or False: All insects have six legs.</strong><br>
+    <input type="radio" name="q15" value="A"> True<br>
+    <input type="radio" name="q15" value="B"> False<br>
+  </div>
+
+  <div class="question"><strong>16. Which of the following is a herbivore?</strong><br>
+    <input type="radio" name="q16" value="A"> Lion<br>
+    <input type="radio" name="q16" value="B"> Cow<br>
+    <input type="radio" name="q16" value="C"> Tiger<br>
+    <input type="radio" name="q16" value="D"> Wolf<br>
+  </div>
+
+  <div class="question"><strong>17. Which organ pumps blood around the body?</strong><br>
+    <input type="radio" name="q17" value="A"> Lung<br>
+    <input type="radio" name="q17" value="B"> Heart<br>
+    <input type="radio" name="q17" value="C"> Stomach<br>
+    <input type="radio" name="q17" value="D"> Brain<br>
+  </div>
+
+  <div class="question"><strong>18. Name one type of weather.</strong><br>
+    <input type="radio" name="q18" value="A"> Rain<br>
+    <input type="radio" name="q18" value="B"> Rock<br>
+    <input type="radio" name="q18" value="C"> Soil<br>
+    <input type="radio" name="q18" value="D"> Chair<br>
+  </div>
+
+  <div class="question"><strong>19. What do bees make?</strong><br>
+    <input type="radio" name="q19" value="A"> Honey<br>
+    <input type="radio" name="q19" value="B"> Water<br>
+    <input type="radio" name="q19" value="C"> Milk<br>
+    <input type="radio" name="q19" value="D"> Bread<br>
+  </div>
+
+  <div class="question"><strong>20. The Sun rises in the ____.</strong><br>
+    <input type="radio" name="q20" value="A"> East<br>
+    <input type="radio" name="q20" value="B"> West<br>
+    <input type="radio" name="q20" value="C"> North<br>
+    <input type="radio" name="q20" value="D"> South<br>
+  </div>
+
+  <!-- Questions 21–30 -->
+  <div class="question"><strong>21. Which gas do plants release during photosynthesis?</strong><br>
+    <input type="radio" name="q21" value="A"> Oxygen<br>
+    <input type="radio" name="q21" value="B"> Carbon dioxide<br>
+    <input type="radio" name="q21" value="C"> Nitrogen<br>
+    <input type="radio" name="q21" value="D"> Helium<br>
+  </div>
+
+  <div class="question"><strong>22. Which part of the body helps us hear?</strong><br>
+    <input type="radio" name="q22" value="A"> Ear<br>
+    <input type="radio" name="q22" value="B"> Nose<br>
+    <input type="radio" name="q22" value="C"> Eye<br>
+    <input type="radio" name="q22" value="D"> Mouth<br>
+  </div>
+
+  <div class="question"><strong>23. Which planet do we live on?</strong><br>
+    <input type="radio" name="q23" value="A"> Mars<br>
+    <input type="radio" name="q23" value="B"> Earth<br>
+    <input type="radio" name="q23" value="C"> Venus<br>
+    <input type="radio" name="q23" value="D"> Jupiter<br>
+  </div>
+
+  <div class="question"><strong>24. Which of these is a mammal?</strong><br>
+    <input type="radio" name="q24" value="A"> Frog<br>
+    <input type="radio" name="q24" value="B"> Dog<br>
+    <input type="radio" name="q24" value="C"> Snake<br>
+    <input type="radio" name="q24" value="D"> Spider<br>
+  </div>
+
+  <div class="question"><strong>25. True or False: Plants need sunlight to grow.</strong><br>
+    <input type="radio" name="q25" value="A"> True<br>
+    <input type="radio" name="q25" value="B"> False<br>
+  </div>
+
+  <div class="question"><strong>26. Which of these is a natural resource?</strong><br>
+    <input type="radio" name="q26" value="A"> Coal<br>
+    <input type="radio" name="q26" value="B"> Plastic<br>
+    <input type="radio" name="q26" value="C"> Paper<br>
+    <input type="radio" name="q26" value="D"> Glass<br>
+  </div>
+
+  <div class="question"><strong>27. Which organ helps us breathe?</strong><br>
+    <input type="radio" name="q27" value="A"> Lung<br>
+    <input type="radio" name="q27" value="B"> Heart<br>
+    <input type="radio" name="q27" value="C"> Stomach<br>
+    <input type="radio" name="q27" value="D"> Brain<br>
+  </div>
+
+  <div class="question"><strong>28. Which of these is not a planet?</strong><br>
+    <input type="radio" name="q28" value="A"> Mars<br>
+    <input type="radio" name="q28" value="B"> Moon<br>
+    <input type="radio" name="q28" value="C"> Earth<br>
+    <input type="radio" name="q28" value="D"> Venus<br>
+  </div>
+
+  <div class="question"><strong>29. Which of these animals can fly?</strong><br>
+    <input type="radio" name="q29" value="A"> Eagle<br>
+    <input type="radio" name="q29" value="B"> Dog<br>
+    <input type="radio" name="q29" value="C"> Cat<br>
+    <input type="radio" name="q29" value="D"> Cow<br>
+  </div>
+
+  <div class="question"><strong>30. The cycle of water includes evaporation, condensation, and ____.</strong><br>
+    <input type="radio" name="q30" value="A"> Freezing<br>
+    <input type="radio" name="q30" value="B"> Precipitation<br>
+    <input type="radio" name="q30" value="C"> Melting<br>
+    <input type="radio" name="q30" value="D"> Photosynthesis<br>
+  </div>
+
+  <button id="submitBtn">Submit Test</button>
+  <p id="result"></p>
+</div>
+
+<script>
+const correctAnswers = {
+  q1:'B',q2:'B',q3:'A',q4:'B',q5:'A',q6:'B',q7:'A',q8:'A',q9:'B',q10:'B',
+  q11:'B',q12:'A',q13:'B',q14:'A',q15:'A',q16:'B',q17:'B',q18:'A',q19:'A',q20:'A',
+  q21:'A',q22:'A',q23:'B',q24:'B',q25:'A',q26:'A',q27:'A',q28:'B',q29:'A',q30:'B'
+};
+
+document.getElementById('submitBtn').addEventListener('click', function() {
+  let score = 0;
+  let feedback = '';
+  for(let q in correctAnswers){
+    const radios = document.getElementsByName(q);
+    let userAnswer = '';
+    for(let r of radios){
+      if(r.checked) userAnswer = r.value;
+      if(r.checked && r.value === correctAnswers[q]) score += 100/30;
+    }
+    feedback += `${q}: Your answer: ${userAnswer || 'None'}, Correct answer: ${correctAnswers[q]}<br>`;
+  }
+  const name = document.getElementById('studentName').value.trim() || 'Student';
+  document.getElementById('result').innerHTML = `Hello ${name}, your score is ${Math.round(score)} out of 100.<br><br><strong>Answer Key:</strong><br>${feedback}`;
+});
+</script>
+</body>
+</html>
